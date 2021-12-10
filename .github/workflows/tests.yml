@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install node v14
-      uses: actions/setup-node@v2.4.1
+      uses: actions/setup-node@v2.5.0
       with:
         node-version: 14
         check-latest: true
@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@master
       - name: Checkout submodules
         uses: textbook/git-checkout-submodule-action@master
-      - uses: actions/setup-node@v2.4.1
+      - uses: actions/setup-node@v2.5.0
         with:
           node-version: 14
       - name: Install latest npm
